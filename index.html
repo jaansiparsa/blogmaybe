@@ -11,11 +11,11 @@
     <header>
         <a href="#" class="logo">Logo</a>
         <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+            <li><a href="#" class="active" id="nav">Home</a></li>
+            <li><a href="about.html" id="nav">About</a></li>
+            <li><a href="blog.html" id="nav">Blog</a></li>
+            <li><a href="#" id="nav">Contact</a></li>
+        </ul>=
     </header>
     <section>
         <img src="stars.png" id="stars" alt="stars">
@@ -41,6 +41,7 @@
         let text = document.getElementById("text");
         let btn = document.getElementById('btn');
         let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header');
 
         window.addEventListener('scroll', function(){
             let value = window.scrollY;
@@ -51,6 +52,7 @@
             text.style.marginRight = value * 4 + 'px';
             text.style.marginTop = value * 1.5 + 'px';
             btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * .5 + 'px';
         })
     </script>
 </body>

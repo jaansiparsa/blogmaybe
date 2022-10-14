@@ -23,8 +23,11 @@ header{
     padding: 30px 100px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     z-index: 10000;
+}
+
+header #nav{
+    transform: translateX(-50%);
 }
 
 header .logo{
